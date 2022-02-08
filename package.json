@@ -1,0 +1,20 @@
+{
+  "name": "es6-project",
+  "version": "1.0.0",
+  "description": "Learning ES6  ^_^",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesenelir/es6-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesenelir/es6-project/issues"
+  },
+  "homepage": "https://github.com/lesenelir/es6-project#readme"
+}
