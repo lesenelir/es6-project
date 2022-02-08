@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>01-let实例</title>
+    <style>
+      .item {
+        float: left;
+        margin-right: 10px;
+        width: 100px;
+        height: 50px;
+        border: 1px solid darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>点击盒子切换颜色</h2>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <script>
+      let items = document.querySelectorAll('.item')
+
+      for (let i = 0; i < items.length; i++) {
+        items[i].onclick = function () {
+          // this.style.background = 'pink'   // 当使用var i 时候，只能用这中方法，因为var会使得变量进行提升
+          items[i].style.background = 'pink'
+        }
+      }
+
+    </script>
+  </body>
+</html>
