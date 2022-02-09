@@ -13,15 +13,3 @@ let obj = {
 // 用symbol定义私有变量，取值一定要用[变量名]
 console.log(obj[s1])
 console.log(obj.s1) // undefined
-
-
-
-
-
-
-
-
-
-
-
-

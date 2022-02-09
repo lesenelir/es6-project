@@ -13,6 +13,3 @@ console.log(item.next()) // { value: 'one', done: false }  done如果为false则
 console.log(item.next())
 console.log(item.next())
 console.log(item.next())
-
-
-

@@ -21,5 +21,3 @@ console.log(fn.next())
 
 // 总结：generator函数是分段执行的，yield是暂停执行，而next()是恢复执行
 
-
-
