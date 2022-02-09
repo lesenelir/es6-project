@@ -35,10 +35,3 @@ console.log(Object.is(NaN, NaN)) // true
 let newObj = Object.assign({}, {a: 1}, {b: 2})
 console.log(newObj)
 
-
-
-
-
-
-
-
