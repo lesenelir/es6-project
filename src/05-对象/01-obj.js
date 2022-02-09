@@ -34,4 +34,5 @@ console.log(Object.is(NaN, NaN)) // true
 // Object.assign(target, obj1, obj2...)   // 把obj1 obj2 后面所有的对象都合并到target中
 let newObj = Object.assign({}, {a: 1}, {b: 2})
 console.log(newObj)
+// Note： Object.assign() 是浅拷贝
 
