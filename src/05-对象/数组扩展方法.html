@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+
+    <script>
+      // JSON 对象集合
+      let data = [
+        {
+          "id": "1",
+          "course": "Course1",
+          "classes": "19",
+          "teacher": "T1",
+          "img": "ecmascript.jpg",
+          "is_free": "1",
+          "datetime": "1540454477",
+          "price": "0"
+        },
+        {
+          "id": "2",
+          "course": "Course2",
+          "classes": "22",
+          "teacher": "T2",
+          "img": "dom.jpg",
+          "is_free": "0",
+          "datetime": "1540454477",
+          "price": "699"
+        },
+        // {"id": "3","course":"Course3","classes":"3","teacher":"T3","img":"html.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+        // {"id": "4","course":"Course4","classes":"5","teacher":"T4","img":"css.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+        // {"id": "5","course":"Course5","classes":"50","teacher":"T5","img":"vuejs.jpg","is_free":"0","datetime":"1540454477","price":"1280"},
+        // {"id": "6","course":"Course6","classes":"21","teacher":"T6","img":"reactjs.jpg","is_free":"0","datetime":"1540454477","price":"2180"},
+        // {"id": "7","course":"Course7","classes":"700","teacher":"T7","img":"jiuyeban.jpg","is_free":"0","datetime":"1540454477","price":"4980"}
+      ]
+
+      // forEach第二个参数可以修改第一个参数callback的this
+      data.forEach((elem, index, array) => {
+        console.log(elem, index)
+        console.log(this)
+      }, false)
+
+          // forEach map filter 用法都一致
+
+          // reduce()
+          // reduce callback函数多了一个accumulator 累加器函数: 累加器累计回调的返回值：是上一次调用回调时返回的累积值
+      ;[0, 1, 2, 3, 4].reduce((accumulator, item, index, array) => {
+        return accumulator + item
+      })
+
+      ;[0, 1, 2, 3, 4].reduce((accumulator, item, index, array) => {
+        return accumulator + item
+      }, 10) // reduce的第二个参数是累加器的初始值，即accumulator 的初始值是10
+
+
+    </script>
+
+  </body>
+</html>
