@@ -85,3 +85,5 @@ console.log(result)
 
 // 9. 功能性管道函数
 
+
+// Note： 个人理解： reduce中的accumulator类似于一个在reduce第一个参数的回调函数中的一个"变量"
