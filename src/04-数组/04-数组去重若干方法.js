@@ -66,7 +66,7 @@ function uniqueArr5(arr) {
   }, [])
 }
 
-console.log(uniqueArr5(arr))
+// console.log(uniqueArr5(arr))
 
 
 // 6. Set
@@ -74,5 +74,57 @@ function uniqueArr6(arr) {
   let set = new Set(arr)
   return Array.from(set)
 }
-console.log(uniqueArr5(arr))
+
+// console.log(uniqueArr6(arr))
+
+
+// 7. 单纯reduce
+function uniqueArr7(arr) {
+  return arr.reduce((acc, item) => {
+    if (!acc.includes(item)) {
+      acc.push(item)
+    }
+    return acc
+  }, [])
+
+}
+
+// let a = uniqueArr7(arr)
+// console.log(a)
+
+let res = [1, 1, 2, 3, 4, 5, 2, 3, 6].filter((item, index) => {
+  return arr.indexOf(item) === index
+})
+console.log(res)
+
+let res2 = [1, 1, 2, 3, 4, 5, 2, 3, 6].filter((item, index) => arr.indexOf(item) === index)
+console.log(res2)
+
+// Note: 对于数组的ES6语法，箭头函数没有{} 只写一行 就默认➕上了 return， 把return符合条件的item放入 新数组
+
+
+// 数组去重 对象
+let arrObj = [
+  {id: 1, city: '南京'},
+  {id: 2, city: '南京'},
+  {id: 3, city: '杭州'},
+  {id: 4, city: '广州'}
+]
+
+let map = new Map()
+for (const item of arrObj) {
+  if (!map.has(item.city)) {
+    map.set(item.city, item)
+  }
+}
+
+console.log([...map.values()])
+
+
+
+
+
+
+
+
 

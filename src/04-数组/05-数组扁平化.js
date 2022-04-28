@@ -25,6 +25,7 @@ function flattenUseReduce(arr) {
   }, [])
 }
 
+console.log(flattenUseReduce(arr))
 
 // 3. ES6 中数组扁平化API
 // arr.flat(depth)  depth 可以设置为 Infinity
