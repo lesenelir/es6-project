@@ -87,3 +87,9 @@ console.log(result)
 
 
 // Note： 个人理解： reduce中的accumulator类似于一个在reduce第一个参数的回调函数中的一个"变量"
+
+let k = [1,2,3].reduce((acc, item) => {
+  acc += item
+  return acc
+}, 0)
+console.log(k)

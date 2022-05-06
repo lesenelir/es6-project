@@ -25,6 +25,19 @@ function flattenUseReduce(arr) {
   }, [])
 }
 
+function flatten2(arr) {
+  return arr.reduce((accumulator, item) => {
+    if (Array.isArray(item)) {
+      accumulator = accumulator.concat(flatten2(item))
+    } else {
+      accumulator.push(item)
+    }
+    return accumulator
+  }, [])
+}
+
+console.log(flatten2(arr))
+
 console.log(flattenUseReduce(arr))
 
 // 3. ES6 中数组扁平化API

@@ -52,3 +52,11 @@ console.log(a13)
 // flatMap()
 let arr = [2, 3, 4].flatMap((x) => x * 2)
 console.log(arr)
+
+
+// slice 不改变原数组
+let sss = [1,2,3,4,5,6]
+let s = sss.slice(0, 3)
+console.log(s)
+console.log(sss) // 还是原来的数组
+
